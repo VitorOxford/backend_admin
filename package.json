@@ -2,7 +2,6 @@
   "name": "backend-admin-cajuia",
   "version": "1.0.0",
   "main": "backend_admin.js",
-  "type": "module",
   "scripts": {
     "start": "node backend_admin.js"
   },
