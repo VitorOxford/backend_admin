@@ -1,0 +1,15 @@
+{
+  "name": "backend-admin-cajuia",
+  "version": "1.0.0",
+  "main": "backend_admin.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend_admin.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
