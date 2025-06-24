@@ -13,9 +13,11 @@ const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY;
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
-// Rota de login (autenticação segura)
+// Rota de login (autenticação segura) com debug
 app.post('/api/login', async (req, res) => {
     const { email, senha } = req.body;
+    console.log('Tentativa de login:', email, senha);
+    console.log('Esperado:', process.env.ADMIN_EMAIL, process.env.ADMIN_PASSWORD);
     if (
         email === process.env.ADMIN_EMAIL &&
         senha === process.env.ADMIN_PASSWORD
